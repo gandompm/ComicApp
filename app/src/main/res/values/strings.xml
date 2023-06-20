@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ComicApp</string>
+    <string name="next_button_text">"Next"</string>
+    <string name="previous_button_text">Previous</string>
+    <string name="add_to_favorite">Favorite</string>
+    <string name="show_favorite_comics">Show Favorites</string>
+    <string name="show_current_comic">Current</string>
+    <string name="show_random_comic">Random</string>
+    <string name="remove_from_favorite">Delete</string>
+    <string name="speak">speak</string>
+</resources>
