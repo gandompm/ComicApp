@@ -1,7 +1,7 @@
 # ComicApp
 
-ComicApp is a mobile application that allows users to explore and favorite their favorite comics. 
-It leverages modern technologies such as Jetpack Compose, Dagger Hilt, Retrofit, Room local database, Coil, Coroutines, and instrumented unit tests for local database.
+ComicApp is a mobile application that allows users to explore and mark their favorite comics. 
+Modern technologies such as Jetpack Compose, Dagger Hilt, Retrofit, Room local database, Coil, Coroutines, and instrumented unit tests for local database are used in this application.
 
 
 
