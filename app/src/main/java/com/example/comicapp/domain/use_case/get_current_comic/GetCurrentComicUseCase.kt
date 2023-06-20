@@ -13,11 +13,16 @@ class GetCurrentComicUseCase @Inject constructor(
    private val repository: ComicRepository
 ) {
 
+    /**
+     * Retrieves the current comic or a specific comic with the specified comic number.
+     *
+     * @param comicNum The number of the comic to retrieve. If null, the current comic is fetched.
+     * @return A flow of Resource<Comic> representing the result of the retrieval operation.
+     */
     operator fun invoke(comicNum: Int?) : Flow<Resource<Comic>> {
         return flow {
 
             try {
-                // collect!!!!!!!!!
                 emit(Resource.Loading<Comic>())
                 repository.getComic(comicNum).collect{
                         result ->

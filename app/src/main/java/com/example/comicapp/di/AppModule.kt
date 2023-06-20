@@ -20,8 +20,7 @@ import javax.inject.Singleton
 
 
 /**
- * we tell dagger hill
- * this is how you can create dependencies
+ * we tell dagger hill that this is how you can create dependencies
  *
  * we want to avoid hardcoding dependencies into our objects
  *
@@ -32,6 +31,11 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
+    /**
+     * Provides an instance of the ComicApi interface.
+     *
+     * @return The ComicApi implementation.
+     */
     @Provides
     @Singleton
     fun provideComicApi() : ComicApi{
@@ -42,6 +46,12 @@ object AppModule {
             .create(ComicApi::class.java)
     }
 
+    /**
+     * Provides an instance of the FavoriteComicDatabase.
+     *
+     * @param app The application context.
+     * @return The FavoriteComicDatabase instance.
+     */
     @Provides
     @Singleton
     fun provideFavoriteComicsDatabase(app: Application): FavoriteComicDatabase {
@@ -52,12 +62,25 @@ object AppModule {
         ).build()
     }
 
+    /**
+     * Provides an instance of the ComicRepository interface.
+     *
+     * @param api The ComicApi instance.
+     * @param db The FavoriteComicDatabase instance.
+     * @return The ComicRepository implementation.
+     */
     @Provides
     @Singleton
     fun provideComicRepository(api : ComicApi, db: FavoriteComicDatabase): ComicRepository{
         return ComicRepositoryImp(api, db)
     }
 
+    /**
+     * Provides an instance of the TextToSpeech.
+     *
+     * @param application The application context.
+     * @return The TextToSpeech instance.
+     */
     @Provides
     @Singleton
     fun provideTextToSpeech(application: Application): TextToSpeech {

@@ -1,6 +1,5 @@
 package com.example.comicapp.presentation.ui
 
-import FavComicsPageScreen
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import androidx.activity.ComponentActivity
@@ -12,11 +11,15 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.runtime.*
 import androidx.navigation.compose.rememberNavController
 import com.example.comicapp.presentation.navigation.Screen
-import com.example.comicapp.presentation.navigation.BottomNavItem
-import com.example.comicapp.presentation.navigation.BottomNavigationBar
+import com.example.comicapp.presentation.navigation.bottom_navigation.BottomNavItem
+import com.example.comicapp.presentation.navigation.bottom_navigation.BottomNavigationBar
 import com.example.comicapp.presentation.navigation.Navigation
 import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * This is an Android component activity that serves as the main entry point for the ComicApp application.
+ * It is annotated with @AndroidEntryPoint to enable Hilt dependency injection.
+ */
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 

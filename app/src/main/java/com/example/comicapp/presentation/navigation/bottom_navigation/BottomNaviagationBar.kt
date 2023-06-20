@@ -1,4 +1,4 @@
-package com.example.comicapp.presentation.navigation
+package com.example.comicapp.presentation.navigation.bottom_navigation
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material.*

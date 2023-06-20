@@ -11,5 +11,8 @@ import com.example.comicapp.domain.model.Comic
 )
 abstract class FavoriteComicDatabase : RoomDatabase() {
 
+    /**
+     * Provides access to the data access object (DAO) for favorite comics
+     */
     abstract val dao: FavoriteComicDao
 }

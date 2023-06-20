@@ -10,6 +10,12 @@ class StoreFavComicUseCase @Inject constructor(
     private val repository: ComicRepository
 ) {
 
+    /**
+     * Stores a favorite comic in the database.
+     *
+     * @param comic The comic to be stored as a favorite.
+     * @return A flow of Boolean representing whether the comic was successfully stored or not.
+     */
     operator fun invoke(comic: Comic): Flow<Boolean> {
         return flow {
 

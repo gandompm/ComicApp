@@ -9,6 +9,12 @@ class SearchFavComicUseCase @Inject constructor(
     private val repository: ComicRepository
 ) {
 
+    /**
+     * Searches for a favorite comic with the specified comic number.
+     *
+     * @param comicNum The comic number to search for.
+     * @return A flow of Boolean representing whether the comic exists in the database or not.
+     */
     operator fun invoke(comicNum: Int): Flow<Boolean> {
         return flow {
 

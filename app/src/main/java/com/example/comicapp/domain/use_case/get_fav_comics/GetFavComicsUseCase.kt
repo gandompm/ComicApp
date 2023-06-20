@@ -10,7 +10,11 @@ import javax.inject.Inject
 class GetFavComicsUseCase  @Inject constructor(
     private val repository: ComicRepository
 ) {
-
+    /**
+     * Retrieves a list of favorite comics.
+     *
+     * @return A flow of Resource<List<Comic>> representing the result of the retrieval operation.
+     */
     operator fun invoke(): Flow<Resource<List<Comic>>> {
         return flow {
             repository.getFavoriteComics().collect{
