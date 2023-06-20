@@ -5,6 +5,11 @@ It leverages modern technologies such as Jetpack Compose, Dagger Hilt, Retrofit,
 
 
 
+https://github.com/gandompm/ComicApp/assets/17143396/a640e8f6-4c55-4bdb-8408-5fc3b353026a
+
+
+
+
 Features:
 
 Explore Comics: Dive into a vast collection of comics and browse through them effortlessly. Each comic is presented with its title, number, date, and an image.
