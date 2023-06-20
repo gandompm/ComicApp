@@ -1,6 +1,6 @@
 # ComicApp
 
-ComicApp is an interactive mobile application that allows users to explore and favorite their favorite comics. 
+ComicApp is a mobile application that allows users to explore and favorite their favorite comics. 
 It leverages modern technologies such as Jetpack Compose, Dagger Hilt, Retrofit, Room local database, Coil, Coroutines, and instrumented unit tests for local database.
 
 
