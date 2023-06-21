@@ -5,7 +5,10 @@ Modern technologies such as Jetpack Compose, Dagger Hilt, Retrofit, Room local d
 
 
 
-https://github.com/gandompm/ComicApp/assets/17143396/a640e8f6-4c55-4bdb-8408-5fc3b353026a
+
+
+
+https://github.com/gandompm/ComicApp/assets/17143396/a5ffb583-176a-4821-b336-15667c13f4e1
 
 
 
